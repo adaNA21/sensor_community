@@ -1,0 +1,8 @@
+# Folders
+
+/.idea
+/.ipynb_checkpoints
+
+# Files
+**/*.ipynb
+**/*.csv
