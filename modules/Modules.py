@@ -22,7 +22,7 @@ class DownloadData:
                 df_data_all = pd.DataFrame()
                 latest_date = self.installation_date
 
-            date_interval = (datetime.datetime.now() - latest_date).days
+            date_interval = datetime.datetime.now().day - latest_date.day
 
             for i in tqdm(range(date_interval)):
                 date_format = f'{latest_date.year}-{"{:02d}".format(latest_date.month)}-' \
