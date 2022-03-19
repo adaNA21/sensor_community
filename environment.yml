@@ -1,0 +1,12 @@
+name: SensorCommunity
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8.8
+  - pip
+  - matplotlib=3.3.4
+  - pandas=1.2.3
+  - requests=2.25.1
+  - tqdm
+  - jupyter
+  - jupyterlab
