@@ -1,8 +1,8 @@
 # Folders
 /.idea
-/.ipynb_checkpoints
+**/.ipynb_checkpoints
 **/__pycache__
 
 # Files
-**/*.ipynb
 **/*.csv
+**/*.png

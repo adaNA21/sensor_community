@@ -1,5 +1,5 @@
 ####################################################################################################################
-# Code to define fix parameters for the data download
+# Program to download air quality data relative to my sensor.
 # Copyright (C) 2022 Andrea Di Antonio
 #
 # This program is free software: you can redistribute it and/or modify
@@ -16,20 +16,16 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ####################################################################################################################
 
+# Import packages and modules
+from modules import Modules
 
-import datetime
+# Initialise functions
+download_data = Modules.DownloadData()
 
-# Sensors id
-pm_sensor_id = 70241
-weather_sensor_id = 70242
+# Download PM data
+df_pm = download_data.download_data('pm')
 
-# Sensors names
-pm_sensor_name = f'pms5003_sensor_{pm_sensor_id}'
-meteo_sensor_name = f'bme280_sensor_{weather_sensor_id}'
-dic_sensors = {'PM': pm_sensor_name, 'METEO': meteo_sensor_name}
+# Download Meteorological data
+df_meteo = download_data.download_data('meteo')
 
-# Date when the setting was installed
-installation_date = datetime.datetime.strptime('2022-02-08', '%Y-%m-%d')
-
-# Url were sensor community data are stored
-initial_url = "https://archive.sensor.community/"
+print('Download completed!')
