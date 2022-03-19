@@ -25,3 +25,7 @@ To download the data and store them in the `data` folder, run the following comm
 `python download_data.py`
 
 To produce plots and analyses with the data, run the `Sensor_community_plot` Jupyter Notebook. 
+
+# Warning
+
+As of 19th March 2022 and to date, the sensor was removed for maintenence purpose. 
