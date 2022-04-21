@@ -28,4 +28,4 @@ To produce plots and analyses with the data, run the `Sensor_community_plot` Jup
 
 # Warning
 
-As of 19th March 2022 and to date, the sensor was removed for maintenence purpose. 
+Between 19th March 2022 and 19th April 2022, the sensor was removed for maintenance. Therefore, no data is available for this time window.
